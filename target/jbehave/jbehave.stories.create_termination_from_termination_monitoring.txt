@@ -1,0 +1,17 @@
+
+(jbehave/stories/create_termination_from_termination_monitoring.story)
+Scenario: Verify that user can provide termination using Termination Monitoring form
+Description: we  try to terminate existing Employee and verify that terminated Employee appear
+in status Current
+Given Employee in status Employee (FAILED)
+(Element should be visible {By.xpath: //div[@id  = 'candidates-monitoring-grid']/div[@class = 'k-grid-header']//table//tr/th[@data-title = 'Full Name Native']/a}
+Element: '<a class=k-grid-filter href=http://localhost/IntHR2.Web/# displayed:false></a>'
+Screenshot: file:/D:/MY_PROJESTS/TA_JBehave/branches/new_jbehave_test_2/build/reports/tests/1393590339561.0.png
+Timeout: 50 s.)
+And Termination Monitoring page is opened (NOT PERFORMED)
+When we click Add Termonation and search Рылов Аркадий Александрович (NOT PERFORMED)
+And fill out Termination form with valid data (NOT PERFORMED)
+And click Create Termination button (NOT PERFORMED)
+Then terminated Рылов Аркадий Александрович have status Current (NOT PERFORMED)
+
+

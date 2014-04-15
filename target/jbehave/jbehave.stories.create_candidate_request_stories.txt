@@ -1,0 +1,5 @@
+
+(jbehave/stories/create_candidate_request_stories.story)
+Scenario: Verify that Candidate request successfully created
+Description:  some comments
+Given Employee in status CandidateRequest

@@ -1,0 +1,6 @@
+<story path="jbehave/stories/jbehave_test_stories.story" title="">
+<scenario keyword="Scenario:" title="I can open Locations">
+<step outcome="successful">Given Locations is opened</step>
+<step outcome="successful">Then title is <parameter>Locations</parameter></step>
+</scenario>
+</story>

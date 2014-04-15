@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                           http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+
+    <util:map id="links" key-type="java.lang.String" value-type="java.lang.String">
+        <!--REFERENCE BOOKS -->
+        <entry key="#/location" value="Locations"/>
+       <entry key="#/Dictionaries/CompanyLegalEntity" value="Legal Entity"/>
+        <!-- <entry key="/IntHR2.Web/SEProjects" value="SE projects"/>  -->
+        <entry key="#/Dictionaries/Position" value="Positions"/>
+        <entry key="#/Department" value="Departments"/>
+        <entry key="#/FinancialBusinessUnit" value="Financial BU"/>
+        <entry key="#/managementUnit" value="Management BU"/>
+        <entry key="#/Dictionaries/EducationLevels" value="Education Levels"/>
+        <entry key="#/languages/index" value="Languages"/>
+        <entry key="#/countries/index" value="Countries"/>
+        <entry key="#/Dictionaries/TypeOfContract" value="Types of Contract"/>
+        <entry key="#/Dictionaries/TypeOfEmployment" value="Types Of Employment"/>
+        <entry key="/IntHR2.Web/TypesOfRegistration" value="Registration Types"/>
+        <entry key="/IntHR2.Web/Specialization"  value="Specializations"/>
+        <entry key="/IntHR2.Web/Schedule" value="Working Hours"/>
+        <entry key="/IntHR2.Web/BonusCalculationType" value="Bonus Calculation Types"/>
+        <entry key="/IntHR2.Web/PaymentPeriod" value="Payment Periods"/>
+        <entry key="#/Dictionaries/RelationDegree" value="Relation Degrees"/>
+        <entry key="#/transferReason/index" value="Transfer Reasons"/>
+        <entry key="#/Dictionaries/ScholasticDegree" value="Scholastic Degrees"/>
+        <entry key="#/Dictionaries/MilitaryCategory" value="Military Category"/>
+        <entry key="#/dictionaries/militaryBookedByOrganization" value="Military Booked By Organization"/>
+        <entry key="#/dictionaries/MilitaryEnlistmentOffice" value="Military Enlistment Office"/>
+        <entry key="#/Dictionaries/MilitaryFitness" value="Fitness for Military Service"/>
+        <entry key="#/Dictionaries/MilitaryGrade" value="Military Grade"/>
+        <entry key="#/Dictionaries/MilitaryReservesCategory" value="Military Reserves Category"/>
+        <entry key="#/Dictionaries/MilitaryServiceObligation" value="Military Service Obligation"/>
+        <entry key="#/Dictionaries/MilitaryGroup" value="Military Group"/>
+        <entry key="#/Dictionaries/MilitaryRegistrationObligation" value="Military Registration Obligation"/>
+        <entry key="#/Dictionaries/MilitaryProfile" value="Military Profile"/>
+        <entry key="#/Dictionaries/MilitaryStaff" value="Military Staff"/>
+        <entry key="#/Dictionaries/MilitaryStaffProfile" value="Military Staff Profile"/>
+        <entry key="#/Dictionaries/IdentityCardType" value="Identity Card Types"/>
+        <entry key="#/Dictionaries/BenefitsInAllowanceCalculation" value="Benefits In Allowance Calculation"/>
+        <entry key="#/Dictionaries/Specialty" value="Specialty"/>
+        <entry key="/IntHR2.Web/TypeOfInsuredPerson" value="Type Of Insured Person"/>
+        <entry key="#/dictionaries/formOfStudying" value="Form of Studying" />
+        <entry key="#/dictionaries/retentionActivity" value="Retention Activity" />
+        <entry key="#/dictionaries/informalTerminationReason" value="Informal Termination Reason" />
+        <entry key="#/dictionaries/formalReasonForTermination" value="Formal Reason For Termination" />
+        <entry key="#/Dictionaries/MaritalStatus" value="Marital Status" />
+        <entry key="#/employeeValue/index" value="Employee Value" />
+        <entry key="#/Dictionaries/Institutions" value="Institutions" />
+        <!--ROLES -->
+        <entry key="#/administration/UserRoles" value="User Roles"/>
+        <entry key="#/administration/EmployeeUserRoles" value="User Roles Assignment"/>
+        <!--MONITORING -->
+        <entry key="#/employee/candidates" value="Candidates"/>
+        <entry key="#/employee/staffList" value="Employees"/>
+        <entry key="#/employee/TransferRequestList" value="Transfer Requests"/>
+        <entry key="#/massTransferRequest" value="Mass Transfer Requests"/>
+        <entry key="#/terminationMonitoring" value="Terminations"/>
+        <!--ADMINISTRATION-->
+        <entry key="#/authorization/runAs" value="Change User"/>
+        <entry key="https://ed.luxoft.com/Configurator/" value="Workflow / Notifications Configurator"/>
+
+
+    </util:map>
+
+
+</beans>

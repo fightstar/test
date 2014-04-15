@@ -1,0 +1,12 @@
+<story path="jbehave/stories/create_candidate_stories.story" title="">
+<scenario keyword="Scenario:" title="Verify that candidate created
+Discription: after candidate request">
+<step outcome="pending" keyword="PENDING">Given Employee in status Candidate</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When Candidate Monitoring page is opened</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then verify that <parameter>&#1056;&#1099;&#1083;&#1086;&#1074;, &#1040;&#1088;&#1082;&#1072;&#1076;&#1080;&#1081; &#1040;&#1083;&#1077;&#1082;&#1089;&#1072;&#1085;&#1076;&#1088;&#1086;&#1074;&#1080;&#1095;</parameter> is created</step>
+<pendingMethod>@Given(&quot;Employee in status Candidate&quot;)
+@Pending
+public void givenEmployeeInStatusCandidate() {
+  // PENDING
+}
+</pendingMethod>

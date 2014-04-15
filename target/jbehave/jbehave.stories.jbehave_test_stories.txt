@@ -1,0 +1,7 @@
+
+(jbehave/stories/jbehave_test_stories.story)
+Scenario: I can open Locations
+Given Locations is opened
+Then title is Locations
+
+

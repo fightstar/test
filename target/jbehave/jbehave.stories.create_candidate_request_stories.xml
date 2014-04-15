@@ -1,0 +1,4 @@
+<story path="jbehave/stories/create_candidate_request_stories.story" title="">
+<scenario keyword="Scenario:" title="Verify that Candidate request successfully created
+Description:  some comments">
+<step outcome="successful">Given Employee in status CandidateRequest</step>

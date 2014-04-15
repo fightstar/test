@@ -1,0 +1,9 @@
+<story path="jbehave/stories/create_employee_stories.story" title="">
+<scenario keyword="Scenario:" title="Verify that employee created
+Description: Candidate request (Approve) --&gt; Candidate (SalaryProcessing)--&gt; Create Employee">
+<step outcome="successful">Given Employee in status Employee</step>
+<step outcome="successful">When Employee Monitoring page is opened</step>
+<step outcome="successful">And we set <parameter>&#1056;&#1099;&#1083;&#1086;&#1074;, &#1040;&#1088;&#1082;&#1072;&#1076;&#1080;&#1081;</parameter> in Searhc Employee</step>
+<step outcome="successful">Then verify that Employee <parameter>&#1056;&#1099;&#1083;&#1086;&#1074;, &#1040;&#1088;&#1082;&#1072;&#1076;&#1080;&#1081; &#1040;&#1083;&#1077;&#1082;&#1089;&#1072;&#1085;&#1076;&#1088;&#1086;&#1074;&#1080;&#1095;</parameter> was created</step>
+</scenario>
+</story>

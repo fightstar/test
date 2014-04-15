@@ -1,0 +1,13 @@
+
+(jbehave/stories/create_candidate_stories.story)
+Scenario: Verify that candidate created
+Discription: after candidate request
+Given Employee in status Candidate (PENDING)
+When Candidate Monitoring page is opened (NOT PERFORMED)
+Then verify that Рылов, Аркадий Александрович is created (NOT PERFORMED)
+@Given("Employee in status Candidate")
+@Pending
+public void givenEmployeeInStatusCandidate() {
+  // PENDING
+}
+

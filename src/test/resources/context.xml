@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <import resource="data.xml"/>
+
+    <!-- for inthr2-test.kiev.luxoft.com-->
+    <!--<bean gridId="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+        <property name="username" value="sa"/>
+        <property name="password" value="123456"/>
+        <property name="driverClass" value="net.sourceforge.jtds.jdbc.Driver"/>
+        <property name="url" value="jdbc:jtds:sqlserver://inthr2-test.kiev.luxoft.com:1433;databaseName=IntHR2"/>
+    </bean>-->
+
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE"/>
+        <property name="properties">
+            <props>
+                <prop key="application_url">http://localhost/IntHR2.Web/#</prop>
+            </props>
+        </property>
+    </bean>
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+        <property name="username" value="sa"/>
+        <property name="password" value="!QAZ2wsx"/>
+        <property name="driverClass" value="net.sourceforge.jtds.jdbc.Driver"/>
+        <property name="url" value="jdbc:jtds:sqlserver://localhost:1433;"/>
+    </bean>
+    <bean id="applicationUrl" class="java.lang.String" >
+        <constructor-arg value="${application_url}"/>
+    </bean>
+</beans>
